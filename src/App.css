@@ -1,6 +1,17 @@
+html {
+  background-color: var(--back-ground);
+}
+
 body {
   margin: 0;
-  
+  background-color: var(--back-ground);
+  color: var(--text-color);
+}
+input,
+button,
+select,
+textarea {
+    color-scheme: light;
 }
 .App {
   text-align: center;
@@ -72,7 +83,10 @@ body {
   background-color: var(--back-ground);
   color: var(--text-color);
 }
+.light {
+  color-scheme: light;
+}
 
-@media (max-width: 767px) {
-  
+.dark {
+  color-scheme: dark;
 }

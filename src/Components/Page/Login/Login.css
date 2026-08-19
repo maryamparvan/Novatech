@@ -92,12 +92,12 @@
     .LoginClass{
         width: 65%;
         align-items:center;
-        height: 450px;
+        height: 550px;
         margin-top: 0px;
     }
     .ButtonSubmit{
         transform: translateX(-50%);
-        top: 78%;
+        top: 84%;
         left: 50%;
         position: absolute;
     }
