@@ -1,7 +1,7 @@
 .LoginClass{
     margin-top: 65px;
     width: 25%;
-    height: 750px;
+    height: 550px;
     background-color: var(--card-color);
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 0px;
-    width: 63%;
+    width: 75%;
     height: 8%;
     background-color:var(--text-color);
     margin-top: 30px;
@@ -67,8 +67,8 @@
 }
 .ButtonSubmit{
     position: absolute;
-    width: 300px;
-    height: 60px;
+    width: 200px;
+    height: 55px;
     border-radius: 10px;
     background-color: var(--text-color);
     top :78%;
@@ -89,11 +89,24 @@
 
 @media (max-width: 767px) {
     .LoginClass{
-        width: 280px;
+        width: 65%;
         align-items:center;
         height: 450;
+        margin-top: 0px;
     }
     .ButtonSubmit{
-        left: 6%;
+        transform: translateX(-50%);
+        top: 78%;
+        left: 50%;
+        position: absolute;
+    }
+    .LoginClass input {
+        width: 70%;
+        height: 20%;
+        border-radius: 5%;
+    }
+    .ButtonHeader{
+        width: 100%;
+        height: 100%;
     }
 }

@@ -36,7 +36,7 @@
 @media ( max-width: 767px){
     .OrderSummaryClass{
         width:200px;
-        top: 63%;
+        top: 59%;
         left: 5%;
         margin-right: 10px;
     }
@@ -45,7 +45,7 @@
         right:40%;
         width: 50%;
         height: 10%;
-        top:10%;
+        top:6%;
     }
     .OrderSummaryClass p{
         margin-left: 15px;
