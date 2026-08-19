@@ -52,6 +52,12 @@
     height: fit-content;
     box-sizing: border-box;
 }
+[dir="rtl"] .HomeClass {
+    flex-direction: row-reverse;
+}
+[dir="ltr"] .HomeClass {
+    flex-direction: row;
+}
 
 .ClassImg {
     width: 100%;

@@ -7,10 +7,10 @@
 }
 .Cartcart{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,  250px));
     gap: clamp(10px, 2vw, 20px);
-    margin-left: 160px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 0px;
     min-height: 800px;
 }

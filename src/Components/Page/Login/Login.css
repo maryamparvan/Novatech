@@ -1,7 +1,7 @@
 .LoginClass{
     margin-top: 65px;
     width: 25%;
-    height: 650px;
+    height: 600px;
     background-color: var(--card-color);
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@
     .LoginClass{
         width: 65%;
         align-items:center;
-        height: 450;
+        height: 450px;
         margin-top: 0px;
     }
     .ButtonSubmit{
