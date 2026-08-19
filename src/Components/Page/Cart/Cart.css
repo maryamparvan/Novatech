@@ -8,8 +8,7 @@
 .Cartcart{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 30px;
-    row-gap: 50px;
+    gap: clamp(10px, 2vw, 20px);
     margin-left: 160px;
     margin-right: 150px;
     margin-top: 0px;
@@ -61,8 +60,7 @@
   .Cartcart{
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     margin: 0 auto;
-    column-gap: 10px;
-    row-gap: 10px;
+    gap: 20px;
     margin-left: 5px;
     margin-right: 20px;
     margin-top: 0px;

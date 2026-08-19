@@ -1,7 +1,7 @@
 .LoginClass{
     margin-top: 65px;
     width: 25%;
-    height: 550px;
+    height: 650px;
     background-color: var(--card-color);
     display: flex;
     flex-direction: column;
@@ -70,10 +70,11 @@
     width: 200px;
     height: 55px;
     border-radius: 10px;
+    left: 50%;
     background-color: var(--text-color);
-    top :78%;
-    left:23%;
-    box-shadow: 1px 1px rgb(141, 141, 172,0.4);
+    top :87%;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px rgba(230, 230, 235, 0.4);
     font-size: 18px;
 }
 .errorText {
@@ -81,7 +82,7 @@
     position: absolute;
     bottom: 110px; 
     left: 50%;
-    top: 85%;
+    top: 80%;
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
@@ -102,7 +103,7 @@
     }
     .LoginClass input {
         width: 70%;
-        height: 20%;
+        height: 30px;
         border-radius: 5%;
     }
     .ButtonHeader{

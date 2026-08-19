@@ -1,48 +1,52 @@
-.HomeClass{
-    display: flex;
-    flex-direction: row;
+.HomeClass {
+    width: 100%;
     min-height: 500px;
+    display:flex;
+    flex-direction: row;
 }
-.HomeClassImg{
-    width: 90%;
-    height: 70%;
+
+.HeroSection {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.HomeClassImg {
+    width: 50%;
+    height: auto;
     margin-top: 95px;
     border-radius: 3px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 95px;
+    object-fit: contain;
 }
-.photoClass{
+
+.HeroContent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.ButtonShop {
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.HeroContent:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.photoClass {
     margin-top: 95px;
     display: grid;
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(2, 400px);
     gap: 25px;
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: center;
 }
-.ClassImg{
+
+.ClassImg {
     width: 80%;
     height: 80%;
-    /* margin-top: 95px; */
     border-radius: 5px;
-}
-.HeroSection{
-    position: relative;
-}
-.HeroContent{
-    position: absolute;
-    left: 38%;
-    right: 35%;
-    top: 30%;
-}
-.ButtonShop{
-    width: 120px;
-    height: 50px;
-    border-radius: 5px;
-}
-.HeroContent:hover{
-    transform: scale(1.2);
 }
 
 @media (max-width: 767px) {
