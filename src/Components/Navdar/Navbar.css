@@ -1,0 +1,88 @@
+.NavdarClass{
+    display: flex;
+    flex-direction:row-reverse;
+    gap: 40px;
+    padding: 25px 40px;
+}
+.NavdarClass{
+  font-size: 25px;
+}
+.NavbarDiv{
+    background-color:var(--text-color);
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    
+}
+.cricle{
+    width: 25px;
+    height: 25px; 
+    border-radius: 50%;
+    background-color:var(--back-footer);
+}
+.cricle.active{
+    margin-left: 25px;
+}
+.NavdarClass a{
+    color: var(--text-color);
+    text-decoration: none;
+    
+}
+.LinkClass:hover{
+    transform: scale(1.1);
+}
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language svg {
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.language select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 25px;
+    cursor: pointer;
+    padding: 3px 2px;
+}
+
+.language select option {
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+@media (max-width: 767px) {
+  .NavdarClass{
+    gap: clamp(10px, 3vw, 60px);
+    font-size: 18px;
+  }
+  .NavbarDiv{
+    margin-top: 5px;
+    margin-right: 0px;
+    width: 30px;
+    height: 15px;
+  }
+  .cricle{
+    width: 15px;
+    height: 15px;
+  }
+  .cricle.active{
+    margin-left: 15px;
+  }
+  .language{
+    font-size: 5px;
+    gap: 0px;
+  }
+  .language select{
+    font-size: 18px;
+  }
+  .language svg{
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,88 @@
+.ProductPage h1 {
+    margin-top: 20px;
+    color: var(--text-color);
+    z-index: 1500;
+    position: fixed;
+    margin-left: 150px;
+    margin-right: 1200px;
+    top:0%;
+}
+.ulcategory{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap:30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.CategoryButton{
+  font-size: 20px;
+}
+.ProductPage input {
+    height: 20px;
+} 
+.cljass{
+    margin-top: 100px;
+    position: relative;
+    width: 250px;
+    margin-left: 60px;
+}
+.cljass svg{
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    color: var(--back-ground);
+}
+.cljass input{
+    height: 30px;
+    width: 250px;
+}
+.classgroup{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+}
+.ProductPage{
+    min-height: 400px;
+    margin-top: -150px;
+    
+}
+.CategoryButton {
+    background-color: transparent;
+    color:var(--text-color);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+  .ulcategory{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 130px;
+    gap: 25px;
+  }
+  .classgroup{
+    justify-content:flex-start
+  }
+  .ProductPage h1{
+    margin-top: 70px;
+    margin-left: 10px;
+  }
+  .cljass{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .cljass input{
+    width: 200px;
+    margin-top: 15px;
+  }
+  .cljass svg {
+    left: 170px;
+    margin-top: 20px;
+  }
+  .CategoryButton{
+    font-size: 15px;
+  }
+}

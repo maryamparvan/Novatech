@@ -1,0 +1,30 @@
+.HeaderClasssvg{
+    color: azure;
+    font-size: 60px;
+}
+.HeaderClass {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    background: rgba(20, 20, 30, .7);
+}
+
+@media (max-width: 767px) {
+    .HeaderClass{
+        justify-content:left;
+        padding: 0 0px;
+    }
+    .HeaderClasssvg{
+        font-size: 40px;
+        width:10px;
+    }
+  }

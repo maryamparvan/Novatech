@@ -1,5 +1,10 @@
+body {
+  margin: 0;
+  
+}
 .App {
   text-align: center;
+ 
 }
 
 .App-logo {
@@ -14,25 +19,60 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282c34; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+   color: white; 
 }
 
-.App-link {
+
+ .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+ @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+ :root {
+  --back-ground: rgb(32, 32, 44);
+  --back-footer: #0f1423;
+  --back-nav: rgb(182, 181, 192);
+  --text-color: aliceblue;
+  --card-color: rgb(14, 14, 33);
+  --header-color: #4b4b66;
+}
+
+.light {
+  --back-ground: rgb(32, 32, 44);
+  --back-footer: #0f1423;
+  --text-color: aliceblue;
+  --card-color: rgb(14, 14, 33);
+  --header-color: #4b4b66;
+}
+
+.dark {
+  --back-ground: #3b3c3d;
+--back-footer: #0f0f0f;
+--text-color: #e7ebf1;
+--card-color: #313640;
+--header-color: #4F6FAE;
+}
+.light, .dark {
+  min-height: 100vh;
+  background-color: var(--back-ground);
+  color: var(--text-color);
+}
+
+@media (max-width: 767px) {
+  
 }

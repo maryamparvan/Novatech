@@ -1,0 +1,98 @@
+.LoginClass{
+    margin-top: 65px;
+    width: 550px;
+    height: 700px;
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 10px;
+    gap:20px;
+    position: relative;
+    box-shadow: 1px 1px rgb(141, 141, 172,0.4);
+}
+.divInput{
+    margin-top: 30px;
+}
+.LoginPage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.LoginClass input {
+    width: 300px;
+    height: 45px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--text-color);
+    outline: none;
+    font-size: 15px;
+}
+.LoginClass input:focus {
+    outline: 2px solid rgb(115, 127, 238);
+}
+.LoginClass label{
+    color: var(--text-color);
+    font-size: 25px;
+}
+.divHeader{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    width: 63%;
+    height: 8%;
+    background-color:var(--text-color);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.ButtonHeader{
+    width: 100%;
+    border-color: var(--text-color);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.ButtonHeader.active{
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+.signClass{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ButtonSubmit{
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--text-color);
+    top :78%;
+    left:23%;
+    box-shadow: 1px 1px rgb(141, 141, 172,0.4);
+    font-size: 18px;
+}
+.errorText {
+    color: rgb(246, 114, 114);
+    position: absolute;
+    bottom: 110px; 
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .LoginClass{
+        width: 340px;
+        align-items:center;
+    }
+    .ButtonSubmit{
+        left: 6%;
+    }
+}
