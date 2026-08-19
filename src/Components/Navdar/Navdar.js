@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import './Navbar.css';
-import { SiTechcrunch } from "react-icons/si";
 import React, { useState, useEffect, useContext } from "react";
-import { useNavigate } from "react-router-dom";
 import ThemeContext from "../ThemeContext/ThemeContext.js";
 import { GrLanguage } from "react-icons/gr";
 import LanguageContext from "../LanguageContext/LanguageContext";
@@ -10,7 +8,6 @@ import LanguageContext from "../LanguageContext/LanguageContext";
 const Navdar = (() =>{
   const { Theme, setTheme } = useContext(ThemeContext);
   const { language, setlanguage, translations} = useContext(LanguageContext);
-  const navigate = useNavigate();
   const [currentUser, setCurrentUser] = useState(
     JSON.parse(localStorage.getItem("currentUser") || "null")
   );

@@ -15,7 +15,7 @@ const Home = (() =>{
     return(
         <div className="HomeClass">
             <div className="HeroSection">
-                <img src={photo} className="HomeClassImg" />
+                <img src={photo} className="HomeClassImg" alt="" />
                 <div className="HeroContent">
                     <Button text={translations.ShopNow} className="ButtonShop"  fun={() => shop("/Product")}/>
                 </div>
