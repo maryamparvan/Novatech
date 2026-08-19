@@ -1,18 +1,21 @@
 .HomeClass {
     width: 100%;
     min-height: 500px;
-    display:flex;
+    display: flex;
     flex-direction: row;
+    box-sizing: border-box;
 }
 
 .HeroSection {
     position: relative;
-    width: 100%;
+    width: 30%;
     display: flex;
+    justify-content: center;
 }
 
 .HomeClassImg {
-    width: 50%;
+    width: 100%;
+    max-width: 700px;
     height: auto;
     margin-top: 95px;
     border-radius: 3px;
@@ -22,8 +25,10 @@
 .HeroContent {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
 }
+
 .ButtonShop {
     width: 120px;
     height: 50px;
@@ -33,63 +38,77 @@
 .HeroContent:hover {
     transform: translate(-50%, -50%) scale(1.2);
 }
-
 .photoClass {
+    width: 35%;
     margin-top: 95px;
+    margin-left: auto;
+    margin-right: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: repeat(2, 400px);
-    gap: 25px;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0;
+    row-gap: 15px;       
+    align-content: start; 
+    height: fit-content;
+    box-sizing: border-box;
 }
 
 .ClassImg {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: block;
     border-radius: 5px;
+    object-fit: cover;
 }
+
+
+
 
 @media (max-width: 767px) {
 
-  .HomeClass {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-  }
+    .HomeClass {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 
-  .HomeClassImg {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      border-radius: 3px;
-      margin-left: 0px;
-    margin-right: 0px;
-  }
+    .HeroSection {
+        width: 100%;
+    }
 
-  .photoClass {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 190px);
-    grid-template-rows: repeat(2, 190px);
-    gap: 10px;
-    justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
+    .HomeClassImg {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 90px;
+    }
 
-  .ClassImg {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1 / 1;
-      border-radius: 5px;
-      object-fit: cover;
-  }
+    .HeroContent {
+        left: 50%;
+        top: 42%;
+        transform: translate(-50%, -50%);
+    }
 
-  .HeroContent {
-      left: 50%;
-      top: 40%;
-      transform: translateX(-50%);
-  }
+    .ButtonShop {
+        width: 120px;
+        height: 50px;
+    }
+
+    .photoClass {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    .ClassImg {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
 }
