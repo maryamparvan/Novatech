@@ -1,12 +1,12 @@
 .HomeClass{
     display: flex;
     flex-direction: row;
-    min-height: 700px;
+    min-height: 500px;
 }
 .HomeClassImg{
     width: 80%;
-    height: 80%;
-    margin-top: 10px;
+    height: 70%;
+    margin-top: 95px;
     border-radius: 3px;
     margin-left: 10px;
     margin-right: 10px;
@@ -22,8 +22,9 @@
     margin-right: 200px;
 }
 .ClassImg{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 95px; */
     border-radius: 5px;
 }
 .HeroSection{
@@ -31,9 +32,9 @@
 }
 .HeroContent{
     position: absolute;
-    left: 35%;
+    left: 38%;
     right: 35%;
-    top: 33%;
+    top: 30%;
 }
 .ButtonShop{
     width: 120px;

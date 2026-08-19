@@ -44,20 +44,25 @@
     list-style:none;
     color: rgb(216, 195, 236);
 }
-
+.footerLogo h3{
+    font-size: 25px;
+}
 @media (max-width: 767px) {
   .footerLinks{
     gap: 5px;
     margin-left: 10px;
   }
   .footerLinks a {
-    font-size: 17px;
+    font-size: 13px;
   }
   .footerLinks svg{
     font-size: 100px;
     margin-top: 20px;
     }
     .ulfooter {
-        font-size: 12px;
+        font-size: 8px;
+    }
+    .footerLogo h3{
+        font-size: 20px;
     }
 }

@@ -53,7 +53,7 @@ body {
 }
 
 .light {
-  --back-ground: rgb(32, 32, 44);
+  --back-ground: rgb(41, 41, 57);
   --back-footer: #0f1423;
   --text-color: aliceblue;
   --card-color: rgb(14, 14, 33);

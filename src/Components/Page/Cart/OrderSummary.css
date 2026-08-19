@@ -7,7 +7,7 @@
     border-radius: 12px;
     color: var(--text-color);
     position: fixed;
-    top:62%;
+    top:60%;
     left:78%
 }
 .OrderSummaryClass p{
@@ -36,7 +36,7 @@
 @media ( max-width: 767px){
     .OrderSummaryClass{
         width:200px;
-        top:65%;
+        top: 63%;
         left: 5%;
         margin-right: 10px;
     }

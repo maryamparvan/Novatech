@@ -6,16 +6,16 @@
     color: var(--text-color);
 }
 .CompanyClass h1{
-    font-size: 35px;
+    font-size: 30px;
 }
 .CompanyClass h3 {
-    font-size: 25px;
+    font-size: 20px;
 }
 .CompanyClass p {
-    font-size: 20px;
+    font-size: 18px;
 }
 .exploreClass p {
-    font-size: 20px;
+    font-size: 18px;
 }
 .exploreClass{
     display: flex;
@@ -29,7 +29,7 @@
     height: 25px;
 }
 .exploreClass h3{
-    font-size: 22px;
+    font-size: 20px;
 }
 .whyClass{
     margin-top: 50px;
@@ -37,7 +37,7 @@
     margin-bottom: 50px;
 }
 .whyClass ul{
-    font-size: 20px;
+    font-size: 18px;
 }
 .question{
     margin-top: 50px;
@@ -48,7 +48,7 @@
     color: var(--text-color);
     margin-top: 25px; 
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 @media (max-width:767px) {
@@ -56,9 +56,9 @@
         margin-right: 30px;
     }
     .question a{
-        font-size: 20px;
+        font-size: 18px;
     }
     .question h3{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
