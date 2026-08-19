@@ -1,4 +1,4 @@
-import React,{useState, useContext} from "react";
+import React,{ useContext} from "react";
 import ProductData from "../Product/ProductData.json";
 import Button from "../../Button/Button";
 import './OrderSummary.css';

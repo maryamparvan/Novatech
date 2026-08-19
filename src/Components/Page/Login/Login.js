@@ -18,12 +18,11 @@ const Login = (() =>{
         email,
         password
     }
-    const currentUser = JSON.parse(localStorage.getItem("currentUser")) || [];
     const save = (() =>{
         if(!name || !email || !password ){
             setError("Please fill in all fields");
         }
-        else if(copassword != password){
+        else if(copassword !== password){
             setError("Passwords do not match");
         }
         else{

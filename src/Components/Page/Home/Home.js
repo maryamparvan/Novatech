@@ -21,10 +21,10 @@ const Home = (() =>{
                 </div>
             </div>
             <div className="photoClass">
-                <img src = {photo1} className="ClassImg" />
-                <img src = {photo2} className="ClassImg" />
-                <img src = {photo3} className="ClassImg" />
-                <img src = {photo4} className="ClassImg" />
+                <img src = {photo1} className="ClassImg" alt="" />
+                <img src = {photo2} className="ClassImg" alt=""  />
+                <img src = {photo3} className="ClassImg"  alt="" />
+                <img src = {photo4} className="ClassImg" alt="" />
             </div>
         </div>
     )
