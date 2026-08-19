@@ -1,4 +1,4 @@
-import react from "react";
+
 import CreatCart from "../CreatCart/CreatCart"
 import '../Product.css'
 

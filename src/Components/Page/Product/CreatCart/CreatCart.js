@@ -22,7 +22,7 @@ const CreatCart = ({ category,search}) =>{
     useEffect(() => {
         const savedProducts = localStorage.getItem("Product");
         if (!savedProducts) {
-            localStorage.setItem("Product", JSON.stringify(Product));
+            localStorage.setItem("Product", JSON.stringify(ProductData));
         }
     }, []);
     const addLocalStorage = (nameitem) =>{

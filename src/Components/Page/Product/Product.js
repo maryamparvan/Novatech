@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import './Product.css';
 import { IoMdSearch } from "react-icons/io";
-import CreatCart from './CreatCart/CreatCart.js';
 import ShowProduct from './ShowProduct/ShowProduct.js';
 import Button from '../../Button/Button.js';
 import LanguageContext from '../../LanguageContext/LanguageContext.js';
