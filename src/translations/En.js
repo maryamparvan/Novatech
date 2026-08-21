@@ -17,7 +17,7 @@ const En = {
     AboutUs : "About Us",
     ContactUs : "Contact Us",
     Careers : "Careers",
-    signin: "signin",
+    signin: "sign in",
     type : "type",
     logout : "logout",
     name : "name",

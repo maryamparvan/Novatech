@@ -47,12 +47,12 @@ const Login = (() =>{
                 JSON.stringify(foundUser)
             );
             setError("You logged in successfully");
+            localStorage.setItem("currentUser", JSON.stringify(user));
+            window.dispatchEvent(new Event("userChanged"));
             navigate("/Cart");
         } else {
             setError("Name or password is incorrect");
         }
-        localStorage.setItem("currentUser", JSON.stringify(user));
-        window.dispatchEvent(new Event("userChanged"));
     };
     return(
         <div className="LoginPage">
