@@ -12,12 +12,13 @@
 }
 .OrderSummaryClass p{
     margin-left: 25px;
-    font-size: 20px;
+    margin-right: 20px;
+    font-size: 15px;
 }
 .OrderSummaryClass h2{
     margin-top: 10px;
     margin-left: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .OrderSummaryClass hr{
     color: var(--text-color);
@@ -30,6 +31,8 @@
     width: 25%;
     height: 10%;
     border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
     border: 1px solid var(--text-color);
 }
 
@@ -39,6 +42,7 @@
         top: 59%;
         left: 5%;
         margin-right: 10px;
+        margin-left: 10px;
     }
     .ButtonPay{
         left:40%;

@@ -37,6 +37,7 @@
 .cljass input{
     height: 30px;
     width: 250px;
+    background-color: aliceblue;
 }
 .classgroup{
     display: flex;
@@ -84,6 +85,6 @@
   }
   .CategoryButton{
     font-size: 15px;
-    
+
   }
 }

@@ -37,6 +37,9 @@
     display: block;
     margin: 0 auto;
     height: 40px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 6%;
 }
 .classCartp.active{
     transform: scale(1.15);
