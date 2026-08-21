@@ -105,6 +105,9 @@
         left: 50%;
         position: absolute;
     }
+    .errorText {
+        top: 77%;
+    }
     .LoginClass input {
         width: 70%;
         height: 30px;

@@ -53,28 +53,6 @@ body {
     transform: rotate(360deg);
   }
 }
-button,
-input,
-select,
-textarea {
-    appearance: none;
-    -webkit-appearance: none;
-    font-family: inherit;
-}
-
-button {
-    background-color: var(--text-color);
-    color: black;
-    border: 1px solid var(--text-color);
-}
-input {
-    background-color: var(--text-color);
-    color: black;
-}
-select {
-    background-color: var(--text-color);
-    color: black;
-}
 
  :root {
   --back-ground: rgb(56, 56, 70);
@@ -100,15 +78,9 @@ select {
 --card-color: #1a1c22;
 --header-color: #4F6FAE;
 }
-.light,.dark {
+.light,
+.dark {
     min-height: 100vh;
     background-color: var(--back-ground);
     color: var(--text-color);
-}
-.light {
-  color-scheme: light;
-}
-
-.dark {
-  color-scheme: dark;
 }
