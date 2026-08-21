@@ -7,11 +7,11 @@ body {
   background-color: var(--back-ground);
   color: var(--text-color);
 }
-input,
-button,
-select,
-textarea {
-    color-scheme: light;
+
+#root {
+  min-height: 100vh;
+  background-color: var(--back-ground);
+  color: var(--text-color);
 }
 .App {
   text-align: center;
