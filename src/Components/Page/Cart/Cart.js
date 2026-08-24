@@ -4,46 +4,72 @@ import image from '../Product/CreatCart/ProductPhoto/Image.js'
 import Button from "../../Button/Button";
 import OrderSummary from './OrderSummary.js';
 import LanguageContext from "../../LanguageContext/LanguageContext.js";
+import getProducts from "../../../services/productApi";
 
 const Cart = (() =>{
     const [active, setActive] = useState(false);
     const { translations } = useContext(LanguageContext);
+
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const data = await getProducts();
+                setProducts(data);
+            } catch (error) {
+                setError(error.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+    
+        fetchProducts();
+    }, []);
+
     useEffect(() => {
         const handleClickOutside = () => {
             setActive(null);
         };
-    
         document.addEventListener("click", handleClickOutside);
-    
         return () => {
             document.removeEventListener("click", handleClickOutside);
         };
     }, []);
-    const Product = JSON.parse(localStorage.getItem("Product"))
-    const [shopProduct, setShopProduct] = useState(
-        JSON.parse(localStorage.getItem("ShopProduct")) || []
-    );
-    const deleteFromCart = (namepro) => {
+
+    const [shopProduct, setShopProduct] = useState(JSON.parse(localStorage.getItem("ShopProduct")) || [] );
+
+    const deleteFromCart = (idprp) => {
         const newCart = shopProduct.filter(
-            (item) => item.namep !== namepro
+            (item) => item.id !== idprp
         );
         localStorage.setItem("ShopProduct",JSON.stringify(newCart));
         setShopProduct(newCart);
     };
-    const cartProducts = Product.filter((product) =>
-        shopProduct.some(
-            (cartItem) => cartItem.namep === product.name
-        )
-    );
-    const addQuantity = (nameCart,quantityS) => {
+
+    const cartProducts = products.filter((product) =>
+    shopProduct.some(
+        (cartItem) => cartItem.id === product.id
+    )
+);
+
+    const addQuantity = (idpro,quantityS) => {
         const newCart = shopProduct.map((item) =>
-            item.namep === nameCart
+            item.id === idpro
                 ? { ...item, quantity: Number(quantityS) }
                 : item
         );
         localStorage.setItem ("ShopProduct",JSON.stringify(newCart))
         setShopProduct(newCart);
     }
+    if (loading) {
+        return <p>Loading...</p>;
+    }
+    
+    if (error) {
+        return <p>Error: {error}</p>;
+    } 
     return(
         <div className="CartClassShop">
             <div className="headerCart">
@@ -53,18 +79,18 @@ const Cart = (() =>{
                 {cartProducts.map((item) => (
                     <div key={item.id} className={`Cartcartdiv ${active === item.id ? "active" : ""}`} onClick={(e) => {e.stopPropagation();
                         setActive(item.id);}} >
-                        <img src={image[item.id]} alt={item.name} className="imageClasscart" /> 
-                        <h3>{translations.type} :{item.name}</h3>
+                        <img src={item.thumbnail} alt={item.title} className="imageClasscart" /> 
+                        <h3>{translations.type} :{item.title}</h3>
                         <p>{translations.price}: ${item.price}</p>
-                        <p>{translations.available} :{item.num}</p>
-                        <select onChange={(e) => addQuantity(item.name, e.target.value)}>
-                            {Array.from({ length: item.num }, (_, index) => (
+                        <p>{translations.available} :{item.stock}</p>
+                        <select onChange={(e) => addQuantity(item.id, e.target.value)}>
+                            {Array.from({ length: item.stock }, (_, index) => (
                                 <option key={index + 1} value={index + 1} >
                                     {index + 1}
                                 </option>
                             ))}
                         </select>
-                        <Button text={translations.deleteFromCart} fun={() => deleteFromCart(item.name)} className="ButtonDeleteCart" />
+                        <Button text={translations.deleteFromCart} fun={() => deleteFromCart(item.id)} className="ButtonDeleteCart" />
                     </div>
                 ))} 
             </div>

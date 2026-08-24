@@ -25,6 +25,8 @@ const En = {
     password : "password",
     ConfirmPassword: "confirm password",
     All : "All",
+    AddtoCart : "Add to Cart",
+    RemovefromCart : "Remove from Cart",
     price: "Price",
     available: "Available",
     deleteFromCart: "Delete from Cart",
