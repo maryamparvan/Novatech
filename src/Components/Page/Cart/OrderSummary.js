@@ -16,11 +16,6 @@ const OrderSummary = (({ shopProduct, setShopProduct }) =>{
         fetchProducts();
     }, []);
     const { translations } = useContext(LanguageContext);
-    const cartProducts = products.filter((item) =>
-        shopProduct.some(
-            (cartItem) => cartItem.id === item.id
-        )
-    );
     const total = shopProduct.reduce((sum, cartItem) => {
         const product = products.find(
             (item) => item.id === cartItem.id
