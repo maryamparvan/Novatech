@@ -14,7 +14,7 @@
 .CartClass div {
     width: 250px;
     max-width: 350px;
-    height: 400px;
+    height: 380px;
     margin: 0;
     background-color: var(--card-color);
     border-radius: 5px;
@@ -38,6 +38,7 @@
     width: 150px;
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
     height: 40px;
     background-color: aliceblue;
     color: black;
