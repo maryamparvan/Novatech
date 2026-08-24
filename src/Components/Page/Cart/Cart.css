@@ -26,7 +26,7 @@
     color:  var(--text-color);
     margin-left: 10px;
     margin-right: 5px;
-    font-size: 20px;
+    font-size: 16px;
 }
 .Cartcartdiv p {
     color: var(--text-color);
@@ -94,10 +94,13 @@
     }
     .Cartcartdiv h3 {
         margin-left: 5px;
-        font-size: 12px;
+        margin-right: 5px;
+        font-size: 11px;
     }
     .Cartcartdiv p {
         font-size: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .ButtonDeleteCart{
         width: 110px;

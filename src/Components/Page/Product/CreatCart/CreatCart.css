@@ -56,24 +56,28 @@
     padding-top: 170px;
   }
   .CartClass div{
-    width: 130px;
+    width: 125px;
     height: 250px;
     margin-left: 5px;
     margin-right: 5px;
   }
   .imageClass{
     width: 130px;
-    height: 80px;
+    height: 70px;
   }
   .CartClass p{
     font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .CartClass h3{
-    font-size: 15px;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .ButtonCart{
-    width: 120px;
+    width: 110px;
     height: 20px;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
