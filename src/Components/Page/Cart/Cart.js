@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import './Cart.css';
-import image from '../Product/CreatCart/ProductPhoto/Image.js'
 import Button from "../../Button/Button";
 import OrderSummary from './OrderSummary.js';
 import LanguageContext from "../../LanguageContext/LanguageContext.js";
