@@ -12,9 +12,9 @@
     min-height: 500px;
 }
 .CartClass div {
-    width: 250px;
-    max-width: 350px;
-    height: 380px;
+    width: 240px;
+    max-width: 340px;
+    height: 355px;
     margin: 0;
     background-color: var(--card-color);
     border-radius: 5px;

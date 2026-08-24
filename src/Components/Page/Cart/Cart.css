@@ -18,15 +18,15 @@
 .Cartcartdiv{
     background-color: var(--card-color);
     border-radius: 5px;
-    height: 380px;
-    width: 250px;
+    height: 370px;
+    width: 240px;
     margin-top: 120px;
 }
 .Cartcartdiv h3 {
     color:  var(--text-color);
-    margin-left: 5px;
+    margin-left: 10px;
     margin-right: 5px;
-    font-size: 15px;
+    font-size: 20px;
 }
 .Cartcartdiv p {
     color: var(--text-color);

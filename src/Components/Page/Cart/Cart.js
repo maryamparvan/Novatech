@@ -79,7 +79,7 @@ const Cart = (() =>{
                     <div key={item.id} className={`Cartcartdiv ${active === item.id ? "active" : ""}`} onClick={(e) => {e.stopPropagation();
                         setActive(item.id);}} >
                         <img src={item.thumbnail} alt={item.title} className="imageClasscart" /> 
-                        <h3>{translations.type} :{item.title}</h3>
+                        <h3> {item.title}</h3>
                         <p>{translations.price}: ${item.price}</p>
                         <p>{translations.available} :{item.stock}</p>
                         <select onChange={(e) => addQuantity(item.id, e.target.value)}>
