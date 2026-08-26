@@ -15,7 +15,7 @@ const Fa = {
     Warranty: "گارانتی",
     Returns: "مرجوعی",
     logout : "خروج",
-    AddtoCart : "اضافه کردن ب سبد خرید ",
+    AddtoCart : "اضافه ب سبد خرید ",
     RemovefromCart : "حذف از سبد خرید",
     AboutUs: "درباره ما",
     ContactUs: "تماس با ما",
