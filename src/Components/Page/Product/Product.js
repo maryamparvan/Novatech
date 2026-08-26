@@ -11,11 +11,10 @@ const Product = () => {
     const { translations } = useContext(LanguageContext);
     const categories = [
         { value: "All", label: translations.All },
-        { value: "Laptop", label: translations.Laptops },
-        { value: "SmartPhone", label: translations.Smartphones },
-        { value: "SmartWatch", label: translations.Smartwatch },
-        { value: "Headphone", label: translations.headphone },
-        { value: "AirPods", label: translations.Earbuds }
+        { value: "beauty", label: translations.beauty },
+        { value: " furniture", label: translations. furniture },
+        { value: "fragrances", label: translations.fragrances },
+        { value: "groceries", label: translations.groceries },
     ];
     return (
         <div className="ProductPage">

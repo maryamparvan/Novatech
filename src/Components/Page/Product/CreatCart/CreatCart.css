@@ -7,7 +7,7 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 20px;
     row-gap: 30px;
-    margin-inline-start: 180px;
+    margin-inline-start: 105px;
     padding-top: 150px;
     min-height: 500px;
 }
@@ -52,7 +52,7 @@
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     column-gap: 10px;
     row-gap: 10px;
-    margin-inline-start: 120px;
+    margin-inline-start: 80px;
     padding-top: 170px;
   }
   .CartClass div{
