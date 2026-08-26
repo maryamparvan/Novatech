@@ -11,10 +11,10 @@ const Footer = () => {
         {
             title: "product",
             option: [
-                "Laptops",
-                "Smartphones",
-                "Earbuds",
-                "headphone"
+                "beauty",
+                "furniture",
+                "groceries",
+                "fragrances"
             ]
         },
         {
