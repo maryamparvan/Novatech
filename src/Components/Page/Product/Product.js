@@ -12,7 +12,7 @@ const Product = () => {
     const categories = [
         { value: "All", label: translations.All },
         { value: "beauty", label: translations.beauty },
-        { value: " furniture", label: translations. furniture },
+        { value: "furniture", label: translations.furniture },
         { value: "fragrances", label: translations.fragrances },
         { value: "groceries", label: translations.groceries },
     ];

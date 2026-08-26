@@ -7,7 +7,7 @@ const En = {
     support: "Support",
     ShopNow : "Shop Now",
     beauty : "beauty",
-    furniture : " furniture",
+    furniture : "furniture",
     groceries : "groceries",
     fragrances : "fragrances",
     FAQ : "FAQ",
