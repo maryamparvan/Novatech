@@ -59,8 +59,8 @@
 }
 @media (max-width: 767px) {
   .ulcategory{
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 130px;
     gap: 25px;
   }
