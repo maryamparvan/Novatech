@@ -7,10 +7,6 @@ export type Product = {
     thumbnail: string;
     stock: number;
 };
-type ProductsResponse = {
-    products: Product[];
-    total: number;
-};
 
 const getProducts = async (): Promise<Product[]> => {
     const response = await fetch("https://dummyjson.com/products");

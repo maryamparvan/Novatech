@@ -2,7 +2,7 @@ import React,{ useContext, useState, useEffect} from "react";
 import getProducts, {Product} from "../../../services/productApi";
 import Button from "../../Button/Button";
 import './OrderSummary.css';
-import Cart, {CartItem} from "./Cart";
+import { CartItem } from "./Cart";
 import LanguageContext from "../../LanguageContext/LanguageContext";
 import { useNavigate } from "react-router-dom";
 
